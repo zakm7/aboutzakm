@@ -289,22 +289,58 @@ footer {
 }
 
 
-@media screen and (min-width: 768px) {
-  main {
+@media only screen and (max-width: 410px) {
+  .center{
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  #about{
+    width: fit-content;
+    padding-left: 15vh;
+  }
+}
+
+
+
+
+@media screen and (min-width: 550px) {
+  
+main {
     margin-left: 20%;
     margin-right: 20%;
   }
 
-  #about,
+
+
   #project,
   nav ul {
     margin-left: 30%;
     margin-right: 30%;
   }
 }
-/* FOR DESKTOP */
+
+
+@media screen and (max-width: 768px) {
+
+  #project,
+  nav{
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 847px) {
+  #about{
+    
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+}
+
+
 @media screen and (min-width: 1025px) {
-  /* project style */
   .project-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -316,10 +352,9 @@ footer {
   }
 }
 
-/* KEYFRAMES */
 @keyframes slide-in {
   to {
-    width: 115%;
+    width: 100%;
   }
 }
 
@@ -388,3 +423,5 @@ footer {
   align-items: center;
   min-height: 100vh;
 }
+
+
